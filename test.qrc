@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>login.jpg</file>
+    <file>right-direction.svg</file>
+    <file>copyright.png</file>
+    <file>intern.jpg</file>
+    <file>login2.jpg</file>
+    <file>aa.jpg</file>
+    <file>binuslogo.jpg</file>
+    <file>lgobca.jpg</file>
+    <file>log-out.svg</file>
+    <file>signout.jpg</file>
+    <file>footer.jpg</file>
+    <file>header.jpg</file>
+    <file>1A.jpg</file>
+    <file>2A.jpg</file>
+    <file>Untitled.jpg</file>
+    <file>login.jpg</file>
+  </qresource>
+</RCC>
