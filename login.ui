@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1115</width>
+    <width>1143</width>
     <height>889</height>
    </rect>
   </property>
@@ -29,6 +29,9 @@
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="styleSheet">
        <string notr="true">border-image: url(:/assets/Untitled.jpg);</string>
       </property>
@@ -48,8 +51,9 @@
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-image: url(:/assets/login.jpg);
-border-radius: 20px;</string>
+          <string notr="true">border-image: url(:/assets/login.jpg); border-radius: 20px;
+
+</string>
          </property>
          <widget class="QPushButton" name="loginButton">
           <property name="geometry">
@@ -239,6 +243,29 @@ border-color: rgb(162, 162, 162)</string>
            <string>TextLabel</string>
           </property>
          </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>391</width>
+            <height>431</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border-radius: 20px; border-color: black;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>assets/login.jpg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <zorder>label_3</zorder>
          <zorder>label_2</zorder>
          <zorder>label</zorder>
          <zorder>loginButton</zorder>
