@@ -146,7 +146,7 @@ border:none;
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap resource="test.qrc">:/logo/aa.jpg</pixmap>
+                 <pixmap>assets/aa.jpg</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -174,7 +174,7 @@ border:none;
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap resource="test.qrc">:/logo/binuslogo.jpg</pixmap>
+                 <pixmap>assets/binuslogo.jpg</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -193,7 +193,7 @@ border:none;
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap resource="test.qrc">:/logo/intern.jpg</pixmap>
+                 <pixmap>assets/intern.jpg</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -233,8 +233,8 @@ border:none;
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="test.qrc">
-                <normaloff>:/logo/1A.jpg</normaloff>:/logo/1A.jpg</iconset>
+               <iconset>
+                <normaloff>assets/1A.jpg</normaloff>assets/1A.jpg</iconset>
               </property>
               <property name="iconSize">
                <size>
@@ -283,7 +283,7 @@ border:none;
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="test.qrc">:/logo/login2.jpg</pixmap>
+             <pixmap>assets/login2.jpg</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -481,8 +481,8 @@ padding-bottom:10px;</string>
                   <string>Sign Out</string>
                  </property>
                  <property name="icon">
-                  <iconset resource="test.qrc">
-                   <normaloff>:/logo/log-out.svg</normaloff>:/logo/log-out.svg</iconset>
+                  <iconset>
+                   <normaloff>assets/log-out.svg</normaloff>assets/log-out.svg</iconset>
                  </property>
                  <property name="iconSize">
                   <size>
@@ -853,7 +853,7 @@ background-color:white;
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="test.qrc">:/logo/copyright.png</pixmap>
+             <pixmap>:/logo/copyright.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>

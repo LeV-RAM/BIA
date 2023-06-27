@@ -30,7 +30,7 @@
        </sizepolicy>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-image: url(:/logo/Untitled.jpg);</string>
+       <string notr="true">border-image: url(:/assets/Untitled.jpg);</string>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
@@ -48,7 +48,7 @@
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-image: url(:/logo/login.jpg);
+          <string notr="true">border-image: url(:/assets/login.jpg);
 border-radius: 20px;</string>
          </property>
          <widget class="QPushButton" name="loginButton">
@@ -94,7 +94,7 @@ border-color: rgb(162, 162, 162)</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="test.qrc">:/logo/2A.jpg</pixmap>
+           <pixmap>assets/2A.jpg</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -152,7 +152,7 @@ margin-bottom: 5px</string>
            <string/>
           </property>
           <property name="pixmap">
-           <pixmap resource="test.qrc">:/logo/1A.jpg</pixmap>
+           <pixmap>assets/1A.jpg</pixmap>
           </property>
           <property name="scaledContents">
            <bool>true</bool>
@@ -256,7 +256,7 @@ border-color: rgb(162, 162, 162)</string>
  </widget>
  <resources>
   <include location="test.qrc"/>
-  <include location="../../SE.icon/test.qrc"/>
+  <include location="test.qrc"/>
   <include location="test.qrc"/>
  </resources>
  <connections/>
