@@ -1,0 +1,53 @@
+company,location,related_course,period,min_gpa,skills
+A,Jakarta,Machine Learning,1 year,3,Python
+B,Jakarta,Machine Learning,6 months,3,Python
+C,Jakarta,Cloud Computing,1 year,"3,25",AWS
+D,Jakarta,Cloud Computing,8 months,3,AWS
+E,Jakarta,Multimedia,1 year,"3,25",React
+F,Jakarta,Multimedia,1 year,3,React
+G,Jakarta,Multimedia,8 months,3,React
+H,Jakarta,Software Engineering,1 year,3,Figma
+I,Jakarta,Software Engineering,8 months,"3,25",Figma
+J,Jakarta,Software Engineering,1 year,3,Figma
+K,Jakarta,Natural Language Processing,8 months,"3,25",Python
+L,Jakarta,Natural Language Processing,6 months,3,Python
+M,Jakarta,Object Oriented Programming,1 year,"3,25",Java
+N,Jakarta,Object Oriented Programming,8 months,"3,25",Java
+O,Jakarta,Object Oriented Programming,1 year,3,Java
+P,Tangerang,Machine Learning,6 months,"3,25",Python
+Q,Tangerang,Machine Learning,8 months,"3,25",Python
+R,Tangerang,Software Engineering,6 months,3,Figma
+S,Tangerang,Software Engineering,1 year,3,Figma
+T,Tangerang,Software Engineering,1 year,"3,25",Figma
+U,Tangerang,Object Oriented Programming,8 months,3,Java
+V,Tangerang,Object Oriented Programming,6 months,"3,25",Java
+W,Tangerang,Object Oriented Programming,1 year,3,Java
+X,Tangerang,Multimedia,6 months,3,React
+Y,Tangerang,Multimedia,1 year,3,React
+Z,Tangerang,Multimedia,8 months,"3,25",React
+a,Bandung,Machine Learning,1 year,3,Python
+b,Bandung,Machine Learning,6 months,"3,25",Python
+c,Bandung,Computational Biology,1 year,3,Python
+d,Bandung,Computational Biology,8 months,3,Python
+e,Bandung,Cloud Computing,1 year,3,AWS
+f,Bandung,Cloud Computing,1 year,"3,25",AWS
+g,Bandung,Cloud Computing,8 months,3,AWS
+h,Bandung,Cloud Computing,1 year,"3,25",AWS
+i,Bandung,Natural Language Processing,8 months,"3,25",Python
+j,Bandung,Natural Language Processing,1 year,3,Python
+k,Bandung,Natural Language Processing,8 months,"3,25",Python
+l,Bandung,Computational Physics,6 months,3,Python
+m,Bandung,Computational Physics,1 year,"3,25",Python
+n,Bogor,Multimedia,8 months,"3,25",React
+o,Bogor,Multimedia,1 year,3,React
+p,Bogor,Software Engineering,6 months,"3,25",Figma
+q,Bogor,Software Engineering,8 months,"3,25",Figma
+r,Bogor,Object Oriented Programming,6 months,3,Java
+s,Bogor,Object Oriented Programming,1 year,3,Java
+t,Bogor,Machine Learning,1 year,"3,25",Python
+u,Bogor,Machine Learning,8 months,3,Python
+v,Bogor,Cloud Computing,6 months,"3,25",AWS
+w,Bogor,Cloud Computing,1 year,3,AWS
+x,Bogor,Multimedia,6 months,3,React
+y,Bogor,Multimedia,1 year,3,React
+z,Bogor,Multimedia,8 months,"3,25",React
