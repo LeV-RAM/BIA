@@ -1,19 +1,28 @@
 <RCC>
   <qresource prefix="logo">
     <file>login.jpg</file>
-    <file>right-direction.svg</file>
-    <file>copyright.png</file>
-    <file>intern.jpg</file>
-    <file>login2.jpg</file>
-    <file>aa.jpg</file>
-    <file>binuslogo.jpg</file>
-    <file>lgobca.jpg</file>
-    <file>log-out.svg</file>
-    <file>signout.jpg</file>
-    <file>footer.jpg</file>
-    <file>header.jpg</file>
-    <file>1A.jpg</file>
-    <file>2A.jpg</file>
+    <file>assets/1A.jpg</file>
+    <file>assets/2A.jpg</file>
+    <file>assets/aa.jpg</file>
+    <file>assets/binuslogo.jpg</file>
+    <file>assets/book-open-svgrepo-com.svg</file>
+    <file>assets/business-banking-bank-finance-saving-money-currency-svgrepo-com.svg</file>
+    <file>assets/calendar-svgrepo-com.svg</file>
+    <file>assets/checkbox-svgrepo-com.svg</file>
+    <file>assets/copyright.png</file>
+    <file>assets/footer.jpg</file>
+    <file>assets/graduation-cap-bold-svgrepo-com.svg</file>
+    <file>assets/header.jpg</file>
+    <file>assets/intern.jpg</file>
+    <file>assets/lgo bca.png</file>
+    <file>assets/lgobca.jpg</file>
+    <file>assets/light-bulb-svgrepo-com.svg</file>
+    <file>assets/location-pin-svgrepo-com.svg</file>
+    <file>assets/login2.jpg</file>
+    <file>assets/log-out.svg</file>
+    <file>assets/mac-fill-svgrepo-com.svg</file>
+    <file>assets/right-direction.svg</file>
+    <file>assets/signout.jpg</file>
     <file>Untitled.jpg</file>
     <file>login.jpg</file>
   </qresource>

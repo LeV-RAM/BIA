@@ -1,6 +1,9 @@
 import sys
-from viewinternshipdetails import *
-from PyQt5.QtWidgets import QApplication, QMainWindow
+import typing
+from PyQt5 import QtCore
+from getpass import getpass
+# from viewinternshipdetailsfinal import *
+from PyQt5.QtWidgets import QApplication, QMainWindow, QDialog, QWidget
 
 
 class MainWindow(QMainWindow):
@@ -27,5 +30,6 @@ if __name__ == "__main__":
     window.showMaximized()
     window.show()
     sys.exit(app.exec_())
+
 
 

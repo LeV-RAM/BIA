@@ -1,0 +1,38 @@
+student_nim,student_name,student_age,student_location,ipk,major,fav_course,skill,career_interest,company_interest,years_experience
+2540000016,Eugene,18,Jakarta,"3,5",Computer Science,Cloud Computing,C,Cloud Engineer,Microsoft,0
+2540000017,Imogene,19,Jakarta,"3,5",Computer Science,Cloud Computing,C,Cloud Engineer,Microsoft,0
+2540000018,Jake,20,Jakarta,"3,5",Computer Science,Cloud Computing,C,Cloud Engineer,Microsoft,1
+2540000019,Jaxtyn,18,Jakarta,"3,5",Computer Science,Cloud Computing,AWS,Cloud Engineer,Microsoft,1
+2540000020,Jerrie,19,Jakarta,"3,5",Computer Science,Cloud Computing,AWS,Cloud Engineer,Microsoft,1
+2540000021,Jessie,20,Jakarta,"3,5",Computer Science,Cloud Computing,AWS,Cloud Engineer,Microsoft,1
+2540000022,Kevyn,18,Jakarta,"3,6",Computer Science,Cloud Computing,AWS,Cloud Engineer,Microsoft,1
+2540000023,Kianna,19,Jakarta,"3,67",Computer Science,Cloud Computing,AWS,Cloud Engineer,Microsoft,1
+2540000024,Krystelle,20,Jakarta,"3,7",Computer Science,Cloud Computing,AWS,Cloud Engineer,Microsoft,1
+2540000025,Lachlan,18,Jakarta,"3,7",Computer Science,Cloud Computing,AWS,Cloud Engineer,Microsoft,1
+2540000026,Lenox,19,Jakarta,"3,9",Computer Science,Multimedia,Figma,Front-End Developer,Microsoft,1
+2540000027,Madelyn,20,Jakarta,"3,92",Computer Science,Multimedia,React,Front-End Developer,Microsoft,1
+2540000028,Martina,18,Jakarta,"3,92",Computer Science,Multimedia,React,Front-End Developer,Microsoft,1
+2540000029,Marvel,19,Jakarta,"3,92",Computer Science,Multimedia,React,Fullstack Developer,Linux,1
+2540000030,Natasha,20,Tangerang,"3,92",Computer Science,Multimedia,Figma,Fullstack Developer,Linux,1
+2540000031,Nevada,18,Tangerang,"3,92",Computer Science,Multimedia,Figma,Fullstack Developer,Linux,1
+2540000032,Newt,19,Tangerang,"3,92",Computer Science,Multimedia,Figma,Fullstack Developer,Linux,1
+2540000033,Opal,20,Tangerang,"3,92",Computer Science,Multimedia,C#,Fullstack Developer,Linux,1
+2540000034,Paislee,18,Tangerang,"3,95",Computer Science,Multimedia,C#,Fullstack Developer,Linux,1
+2540000035,Payton,19,Tangerang,"3,95",Computer Science,Multimedia,C#,Fullstack Developer,Linux,1
+2540000036,Phyllida,20,Tangerang,"3,95",Computer Science,Software Engineering,C#,Fullstack Developer,Linux,1
+2540000037,Pru,18,Tangerang,"3,95",Computer Science,Software Engineering,React,Fullstack Developer,Linux,1
+2540000038,Randal,19,Tangerang,"3,95",Computer Science,Software Engineering,Figma,Fullstack Developer,Nvidia,2
+2540000039,Santiago,20,Tangerang,"3,95",Computer Science,Object Oriented Programming ,Java,Mobile App Developer,Nvidia,2
+2540000040,Sera,18,Tangerang,"3,95",Computer Science,Object Oriented Programming ,Java,Mobile App Developer,Nvidia,2
+2540000041,Sharla,19,Tangerang,"3,95",Computer Science,Object Oriented Programming ,Java,Mobile App Developer,Nvidia,2
+2540000042,Simone,20,Tangerang,"3,97",Computer Science,Object Oriented Programming ,Java,Mobile App Developer,Nvidia,2
+2540000043,Sloan,18,Tangerang,"3,97",Computer Science,Object Oriented Programming ,Java,Mobile App Developer,Nvidia,2
+2540000044,Staci,19,Tangerang,4,Computer Science,Object Oriented Programming ,Java,Mobile App Developer,Nvidia,2
+2540000045,Sully,20,Tangerang,4,Computer Science,Object Oriented Programming ,Java,Mobile App Developer,Amazon,2
+2540000046,Thom,18,Tangerang,4,Computer Science,Object Oriented Programming ,Java,Mobile App Developer,Amazon,2
+2540000047,Tiara,19,Tangerang,4,Computer Science,Object Oriented Programming ,Java,Mobile App Developer,Amazon,2
+2540000048,Twyla,20,Tangerang,4,Computer Science,Object Oriented Programming ,Python,Mobile App Developer,Amazon,2
+2540000049,Valentine,18,Tangerang,4,Computer Science,Object Oriented Programming ,Python,Mobile App Developer,Amazon,2
+2540000050,Vickie,19,Tangerang,4,Computer Science,Object Oriented Programming ,Python,Game Developer,Amazon,2
+2540000051,Victor,20,Tangerang,4,Computer Science,Object Oriented Programming ,Python,Game Developer,Amazon,2
+2540000052,Washington,18,Tangerang,4,Computer Science,Object Oriented Programming ,Python,Game Developer,Amazon,2
