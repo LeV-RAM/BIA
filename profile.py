@@ -10,6 +10,15 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+def newAccount():
+    from login import Account
+    with open("C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt", "r") as file:
+        lines = file.readlines()
+    for line in lines:
+        acc = line.strip().split("#")
+    return Account(acc[0], acc[1], acc[2], acc[3], acc[4], acc[5], acc[6], acc[7], acc[8], acc[9], acc[10], acc[11], acc[12])
+
+newAcc = newAccount()
 
 class Ui_ProfileWindow(object):
     def goToQuest(self):
@@ -417,29 +426,28 @@ class Ui_ProfileWindow(object):
         QtCore.QMetaObject.connectSlotsByName(ProfileWindow)
 
     def retranslateUi(self, ProfileWindow):
-        from login import acc
         _translate = QtCore.QCoreApplication.translate
         ProfileWindow.setWindowTitle(_translate("ProfileWindow", "ProfileWindow"))
-        self.studentName.setText(_translate("ProfileWindow", acc.get_name()))
-        self.studentId.setText(_translate("ProfileWindow", acc.get_nim()))
-        self.majorName.setText(_translate("ProfileWindow", acc.get_degree()))
-        self.mbtiType.setText(_translate("ProfileWindow", acc.get_mbti().upper()))
+        self.studentName.setText(_translate("ProfileWindow", newAcc.get_name()))
+        self.studentId.setText(_translate("ProfileWindow", newAcc.get_nim()))
+        self.majorName.setText(_translate("ProfileWindow", newAcc.get_degree()))
+        self.mbtiType.setText(_translate("ProfileWindow", newAcc.get_mbti().upper()))
         self.ageLabel.setText(_translate("ProfileWindow", "AGE:"))
-        self.label_17.setText(_translate("ProfileWindow", acc.get_age()))
+        self.label_17.setText(_translate("ProfileWindow", newAcc.get_age()))
         self.locationLabel.setText(_translate("ProfileWindow", "LOCATION:"))
-        self.label_15.setText(_translate("ProfileWindow", acc.get_loc().upper()))
+        self.label_15.setText(_translate("ProfileWindow", newAcc.get_loc().upper()))
         self.gpaLabel.setText(_translate("ProfileWindow", "IPK:"))
-        self.label_13.setText(_translate("ProfileWindow", acc.get_ipk()))
+        self.label_13.setText(_translate("ProfileWindow", newAcc.get_ipk()))
         self.courseLabel.setText(_translate("ProfileWindow", "FAVORITE COURSE:"))
-        self.label_11.setText(_translate("ProfileWindow", acc.get_fav().upper()))
+        self.label_11.setText(_translate("ProfileWindow", newAcc.get_fav().upper()))
         self.skillLabel.setText(_translate("ProfileWindow", "SKILL/TALENT:"))
-        self.label_18.setText(_translate("ProfileWindow", acc.get_skill().upper()))
+        self.label_18.setText(_translate("ProfileWindow", newAcc.get_skill().upper()))
         self.careerLabel.setText(_translate("ProfileWindow", "CAREER OF INTEREST:"))
-        self.label_16.setText(_translate("ProfileWindow", acc.get_career().upper()))
+        self.label_16.setText(_translate("ProfileWindow", newAcc.get_career().upper()))
         self.companyLabel.setText(_translate("ProfileWindow", "COMPANY OF INTEREST:"))
-        self.label_14.setText(_translate("ProfileWindow", acc.get_company().upper()))
+        self.label_14.setText(_translate("ProfileWindow", newAcc.get_company().upper()))
         self.yearsLabel.setText(_translate("ProfileWindow", "YEARS OF INTERNSHIP:"))
-        self.label_12.setText(_translate("ProfileWindow", acc.get_exp().upper()))
+        self.label_12.setText(_translate("ProfileWindow", newAcc.get_exp().upper()))
         self.pushButton_2.setText(_translate("ProfileWindow", "TALENT & INTEREST QUESTIONNAIRE"))
         self.pushButton.setText(_translate("ProfileWindow", "LOGOUT"))
 import test_rc
