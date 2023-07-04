@@ -20,4 +20,5 @@ THINGS TO DO BEFORE USING THE APPLICATION:
 - After all paths are set, create an .exe file (SEE on NOTE B.)
 
 
-
+C. MISSING RESOURCES
+- open CMD on the project file => pyrcc5 test.qrc -o test.py
