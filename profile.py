@@ -10,15 +10,17 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-def newAccount():
+def newAccount(acc_path):
     from login import Account
-    with open("C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt", "r") as file:
+    with open(acc_path, "r") as file:
         lines = file.readlines()
     for line in lines:
         acc = line.strip().split("#")
+    file.close()
     return Account(acc[0], acc[1], acc[2], acc[3], acc[4], acc[5], acc[6], acc[7], acc[8], acc[9], acc[10], acc[11], acc[12])
 
-newAcc = newAccount()
+acc_path = "C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt"
+newAcc = newAccount(acc_path)
 
 class Ui_ProfileWindow(object):
     def goToQuest(self):

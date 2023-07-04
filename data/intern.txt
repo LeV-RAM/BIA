@@ -1,0 +1,52 @@
+Almeera#Jakarta#Machine Learning#12#3.0#Python
+Bricky#Jakarta#Machine Learning#6#3.0#Python
+Casablanca#Jakarta#Cloud Computing#12#3.25#AWS
+Decorum#Jakarta#Cloud Computing#8#3.0#AWS
+Elysium#Jakarta#Multimedia#12#3.25#React
+Fartooth#Jakarta#Multimedia#12#3.0#React
+Gitano#Jakarta#Multimedia#8#3.0#React
+Haze#Jakarta#Software Engineering#12#3.0#Figma
+Illago#Jakarta#Software Engineering#8#3.25#Figma
+Jackie's#Jakarta#Software Engineering#12#3.0#Figma
+Kokukar#Jakarta#Natural Language Processing#8#3.25#Python
+Lavum#Jakarta#Natural Language Processing#6#3.0#Python
+Myrtle#Jakarta#Object Oriented Programming#12#3.25#Java
+Namae#Jakarta#Object Oriented Programming#8#3.25#Java
+Oripathy#Jakarta#Object Oriented Programming#12#3.0#Java
+Pessoku#Tangerang#Machine Learning#6#3.25#Python
+Qwerty#Tangerang#Machine Learning#8#3.25#Python
+Rain#Tangerang#Software Engineering#6#3.0#Figma
+Sumabura#Tangerang#Software Engineering#12#3.0#Figma
+Tingting#Tangerang#Software Engineering#12#3.25#Figma
+Usop#Tangerang#Object Oriented Programming#8#3.0#Java
+Venedetta#Tangerang#Object Oriented Programming#6#3.25#Java
+W#Tangerang#Object Oriented Programming#12#3.0#Java
+Xanadu#Tangerang#Multimedia#6#3.0#React
+Yobintang#Tangerang#Multimedia#12#3.0#React
+Zagreus#Tangerang#Multimedia#8#3.25#React
+Ambatu#Bandung#Machine Learning#12#3.0#Python
+Broos#Bandung#Machine Learning#6#3.25#Python
+Creatura#Bandung#Computational Biology#12#3.0#Python
+Dameji#Bandung#Computational Biology#8#3.0#Python
+Eakon#Bandung#Cloud Computing#12#3.0#AWS
+Faya#Bandung#Cloud Computing#12#3.25#AWS
+Gummy#Bandung#Cloud Computing#8#3.0#AWS
+Holungday#Bandung#Cloud Computing#12#3.25#AWS
+Istina#Bandung#Natural Language Processing#8#3.25#Python
+Jungkir#Bandung#Natural Language Processing#12#3.0#Python
+Kam#Bandung#Natural Language Processing#8#3.25#Python
+Lama#Bandung#Computational Physics#6#3.0#Python
+Mumpung#Bandung#Computational Physics#12#3.25#Python
+Loyo#Bogor#Multimedia#8#3.25#React
+Oyakoro#Bogor#Multimedia#12#3.0#React
+Pitachan#Bogor#Software Engineering#6#3.25#Figma
+Queenmaid#Bogor#Software Engineering#8#3.25#Figma
+Rosmontiis#Bogor#Object Oriented Programming#6#3.0#Java
+Sayonara#Bogor#Object Oriented Programming#12#3.0#Java
+Tumbal#Bogor#Machine Learning#12#3.25#Python
+Unyu#Bogor#Machine Learning#8#3.0#Python
+Vormir#Bogor#Cloud Computing#6#3.25#AWS
+Waduh#Bogor#Cloud Computing#12#3.0#AWS
+Xakit#Bogor#Multimedia#6#3.0#React
+Yemir#Bogor#Multimedia#12#3.0#React
+Zima#Bogor#Multimedia#8#3.25#React

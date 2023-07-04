@@ -10,9 +10,76 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+acc_path = "C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt"
+intern_path = "C:/Users/Asus/OneDrive/Desktop/BIA/data/intern.txt"
+class Intern():
+    def __init__(self, company, name, location, course, period, gpa, skills):
+        self.company = company
+        self.name = name
+        self.location = location
+        self.course = course
+        self.period = period
+        self.gpa = gpa
+        self.skills = skills
+
+    def get_company(self):
+        return self.company
+    def get_name(self):
+        return self.name
+    def get_location(self):
+        return self.location
+    def get_course(self):
+        return self.course
+    def get_period(self):
+        return self.period
+    def get_gpa(self):
+        return self.gpa
+    def get_skills(self):
+        return self.skills
+
+def recommend(list, file_path, min_gpa, required_skill):
+    with open(file_path, 'r') as file:
+        data = file.read()
+    
+    rows = data.split('\n')
+    rows = [row for row in rows if row.strip()]
+    
+    programs = []
+    for row in rows:
+        columns = row.split('#')
+        programs.append(columns)
+
+    filtered_programs = []
+    for program in programs:
+        if required_skill.lower() in program[2].lower() or float(program[4]) < min_gpa:
+            filtered_programs.append(program)
+
+    recommended_programs = filtered_programs[:6]
+
+    for program in recommended_programs:
+        print(f"Company: {program[0]}")
+        print(f"Program: {program[0]} Internship Program")
+        print(f"Location: {program[1]}")
+        print(f"Related Course: {program[2]}")
+        print(f"Period: {program[3]}")
+        print(f"Minimum GPA Score: {program[4]}")
+        print(f"Skill Required: {program[5]}")
+        print("=" * 30)
+        list.append(Intern(program[0], program[0]+" Internship Program", program[1], program[2], program[3], program[4], program[5]))
+    file.close()
+
 class Ui_SearchWindow(object):
     def recommend_internship(self):
         from searchinternshipfinal import Ui_RecommendWindow
+        from login import openAccount
+        
+        acc = openAccount(acc_path)
+        
+        minimum_gpa = float(acc.get_ipk())
+        required_skill = acc.get_degree()
+        intern = []
+        recommend(intern, intern_path, minimum_gpa, required_skill)
+        
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_RecommendWindow()
         self.ui.setupUi(self.window)

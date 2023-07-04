@@ -146,7 +146,7 @@ border:none;
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap resource="test.qrc">:/logo/assets/aa.jpg</pixmap>
+                 <pixmap resource="../test.qrc">:/logo/assets/aa.jpg</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -174,7 +174,7 @@ border:none;
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap resource="test.qrc">:/logo/assets/binuslogo.jpg</pixmap>
+                 <pixmap resource="../test.qrc">:/logo/assets/binuslogo.jpg</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -193,7 +193,7 @@ border:none;
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap resource="test.qrc">:/logo/assets/intern.jpg</pixmap>
+                 <pixmap resource="../test.qrc">:/logo/assets/intern.jpg</pixmap>
                 </property>
                 <property name="scaledContents">
                  <bool>true</bool>
@@ -233,7 +233,7 @@ border:none;
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="test.qrc">
+               <iconset resource="../test.qrc">
                 <normaloff>:/logo/assets/1A.jpg</normaloff>:/logo/assets/1A.jpg</iconset>
               </property>
               <property name="iconSize">
@@ -283,7 +283,7 @@ border:none;
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="test.qrc">:/logo/assets/login2.jpg</pixmap>
+             <pixmap resource="../test.qrc">:/logo/assets/login2.jpg</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -481,7 +481,7 @@ padding-bottom:10px;</string>
                   <string>Sign Out</string>
                  </property>
                  <property name="icon">
-                  <iconset resource="test.qrc">
+                  <iconset resource="../test.qrc">
                    <normaloff>:/logo/assets/log-out.svg</normaloff>:/logo/assets/log-out.svg</iconset>
                  </property>
                  <property name="iconSize">
@@ -557,7 +557,7 @@ QScrollBar:vertical{
             <x>0</x>
             <y>0</y>
             <width>1523</width>
-            <height>951</height>
+            <height>929</height>
            </rect>
           </property>
           <layout class="QVBoxLayout" name="verticalLayout_6">
@@ -644,7 +644,7 @@ margin: 10px 50px;</string>
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap resource="test.qrc">:/logo/assets/lgobca.jpg</pixmap>
+                       <pixmap resource="../test.qrc">:/logo/assets/lgobca.jpg</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -796,7 +796,7 @@ border-radius: 0px;</string>
                           <string>View Details</string>
                          </property>
                          <property name="icon">
-                          <iconset resource="test.qrc">
+                          <iconset resource="../test.qrc">
                            <normaloff>:/logo/assets/right-direction.svg</normaloff>:/logo/assets/right-direction.svg</iconset>
                          </property>
                         </widget>
@@ -866,7 +866,7 @@ margin: 10px 50px;</string>
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap resource="test.qrc">:/logo/assets/lgobca.jpg</pixmap>
+                       <pixmap resource="../test.qrc">:/logo/assets/lgobca.jpg</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -1018,7 +1018,7 @@ border-radius: 0px;</string>
                           <string>View Details</string>
                          </property>
                          <property name="icon">
-                          <iconset resource="test.qrc">
+                          <iconset resource="../test.qrc">
                            <normaloff>:/logo/assets/right-direction.svg</normaloff>:/logo/assets/right-direction.svg</iconset>
                          </property>
                         </widget>
@@ -1088,7 +1088,7 @@ margin: 10px 50px;</string>
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap resource="test.qrc">:/logo/assets/lgobca.jpg</pixmap>
+                       <pixmap resource="../test.qrc">:/logo/assets/lgobca.jpg</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -1316,7 +1316,7 @@ margin: 10px 50px;</string>
                        <string/>
                       </property>
                       <property name="pixmap">
-                       <pixmap>assets/lgobca.jpg</pixmap>
+                       <pixmap resource="../test.qrc">:/logo/assets/lgobca.jpg</pixmap>
                       </property>
                       <property name="scaledContents">
                        <bool>true</bool>
@@ -1517,7 +1517,7 @@ border-radius: 0px;</string>
                           <string>View Details</string>
                          </property>
                          <property name="icon">
-                          <iconset resource="test.qrc">
+                          <iconset resource="../test.qrc">
                            <normaloff>:/logo/assets/right-direction.svg</normaloff>:/logo/assets/right-direction.svg</iconset>
                          </property>
                         </widget>
@@ -1717,6 +1717,7 @@ background-color:white;
   </widget>
  </widget>
  <resources>
+  <include location="../test.qrc"/>
   <include location="test.qrc"/>
  </resources>
  <connections/>

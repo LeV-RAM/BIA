@@ -10,6 +10,16 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
+view_path = "C:/Users/Asus/OneDrive/Desktop/BIA/data/viewselect.txt"
+
+def openView(view_path):
+    from searchpagefinal import Intern
+    with open(view_path, "r") as file:
+        lines = file.readlines()
+    for line in lines:
+        intern = line.strip().split("#")
+    file.close()
+    return Intern(intern[0], intern[1], intern[2], intern[3], intern[4], intern[5], intern[6])
 
 class Ui_DetailsWindow(object):
     def showProfile(self):
@@ -362,26 +372,26 @@ class Ui_DetailsWindow(object):
         self.verticalLayout_7 = QtWidgets.QVBoxLayout(self.Container)
         self.verticalLayout_7.setContentsMargins(11, -1, -1, -1)
         self.verticalLayout_7.setObjectName("verticalLayout_7")
-        self.CompanyLogo = QtWidgets.QLabel(self.Container)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.CompanyLogo.sizePolicy().hasHeightForWidth())
-        self.CompanyLogo.setSizePolicy(sizePolicy)
-        self.CompanyLogo.setMinimumSize(QtCore.QSize(260, 100))
-        font = QtGui.QFont()
-        font.setPointSize(8)
-        self.CompanyLogo.setFont(font)
-        self.CompanyLogo.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.CompanyLogo.setAutoFillBackground(False)
-        self.CompanyLogo.setStyleSheet("border: none;")
-        self.CompanyLogo.setFrameShape(QtWidgets.QFrame.NoFrame)
-        self.CompanyLogo.setText("")
-        self.CompanyLogo.setPixmap(QtGui.QPixmap(":/logo/assets/lgobca.jpg"))
-        self.CompanyLogo.setScaledContents(True)
-        self.CompanyLogo.setAlignment(QtCore.Qt.AlignCenter)
-        self.CompanyLogo.setObjectName("CompanyLogo")
-        self.verticalLayout_7.addWidget(self.CompanyLogo)
+        # self.CompanyLogo = QtWidgets.QLabel(self.Container)
+        # sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        # sizePolicy.setHorizontalStretch(0)
+        # sizePolicy.setVerticalStretch(0)
+        # sizePolicy.setHeightForWidth(self.CompanyLogo.sizePolicy().hasHeightForWidth())
+        # self.CompanyLogo.setSizePolicy(sizePolicy)
+        # self.CompanyLogo.setMinimumSize(QtCore.QSize(260, 100))
+        # font = QtGui.QFont()
+        # font.setPointSize(8)
+        # self.CompanyLogo.setFont(font)
+        # self.CompanyLogo.setLayoutDirection(QtCore.Qt.RightToLeft)
+        # self.CompanyLogo.setAutoFillBackground(False)
+        # self.CompanyLogo.setStyleSheet("border: none;")
+        # self.CompanyLogo.setFrameShape(QtWidgets.QFrame.NoFrame)
+        # self.CompanyLogo.setText("")
+        # self.CompanyLogo.setPixmap(QtGui.QPixmap(":/logo/assets/lgobca.jpg"))
+        # self.CompanyLogo.setScaledContents(True)
+        # self.CompanyLogo.setAlignment(QtCore.Qt.AlignCenter)
+        # self.CompanyLogo.setObjectName("CompanyLogo")
+        # self.verticalLayout_7.addWidget(self.CompanyLogo)
         self.CompanyBoxName = QtWidgets.QLabel(self.Container)
         font = QtGui.QFont()
         font.setPointSize(18)
@@ -618,23 +628,24 @@ class Ui_DetailsWindow(object):
         QtCore.QMetaObject.connectSlotsByName(DetailsWindow)
 
     def retranslateUi(self, DetailsWindow):
+        intern = openView(view_path)
         _translate = QtCore.QCoreApplication.translate
         DetailsWindow.setWindowTitle(_translate("DetailsWindow", "DetailsWindow"))
         self.HomeButton.setText(_translate("DetailsWindow", "HOME"))
         self.SearchButton.setText(_translate("DetailsWindow", "SEARCH"))
         self.SignOutButton.setText(_translate("DetailsWindow", "Sign Out"))
-        self.CompanyBoxName.setText(_translate("DetailsWindow", "BANG CENTIL ACIA"))
-        self.CompanyInternshipName.setText(_translate("DetailsWindow", "Magang Bakti Internship Program"))
-        self.CompanyAddress.setText(_translate("DetailsWindow", "GEDUNG MENARA BCA GRAND INDONESIA LT 18, JL. MH THAMRIN NO.1 JAKARTA 10310"))
-        self.nameLabel.setText(_translate("DetailsWindow", "Name"))
-        self.nameDesc.setText(_translate("DetailsWindow", "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat eros libero, non dignissim ex mattis sed. Pellentesque non malesuada nulla, quis venenatis odio. Donec eget mi at dolor posuere hendrerit. Integer nisi mi, aliquam eget neque eget, posuere porttitor."))
+        self.CompanyBoxName.setText(_translate("DetailsWindow", intern.get_company()))
+        self.CompanyInternshipName.setText(_translate("DetailsWindow", intern.get_name()))
+        self.CompanyAddress.setText(_translate("DetailsWindow", intern.get_location()))
+        # serit. Integer nisi mi, aliquam eget neque eget, posuere porttitor."))
         self.reqLabel.setText(_translate("DetailsWindow", "Requirements"))
-        self.reqDesc.setText(_translate("DetailsWindow", "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n"
-"Max. 5 years old with 30 years of experience\n"
-"GPA 4.999999999\n"
-"Study abroad in South Africa"))
+        self.reqDesc.setText(_translate("DetailsWindow", "Several requirements are needed to be met for this program\n"
+                                        "- Required skills: "+intern.get_skills()+"\n"
+                                        "- Minimum 18 years old\n"
+                                        "- Minimum GPA: "+intern.get_gpa()+"\n"
+                                        "- Study abroad in "+intern.get_location()))
         self.recLabel.setText(_translate("DetailsWindow", "Why we recommend"))
-        self.recDesc.setText(_translate("DetailsWindow", "Lorem ipsum dolor sit amet, consectetur adipiscing elit."))
+        self.recDesc.setText(_translate("DetailsWindow", "Your known skills fit the requirements needed to be met"))
         self.linkLabel.setText(_translate("DetailsWindow", "Registration"))
         self.linkDesc.setText(_translate("DetailsWindow", "[link]"))
         self.binusUniversity.setText(_translate("DetailsWindow", "2023 BINUS University"))

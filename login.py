@@ -15,13 +15,7 @@ from PyQt5.QtWidgets import QLineEdit, QDialog, QMessageBox
 from PyQt5.QtWidgets import *
 from mainpage import Ui_MainWindow
 
-def openAccount():
-    with open("C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt", "r") as file:
-        lines = file.readlines()
-    for line in lines:
-        acc = line.strip().split("#")
-    return Account(acc[0], acc[1], acc[2], acc[3], acc[4], acc[5], acc[6], acc[7], acc[8], acc[9], acc[10], acc[11], acc[12])
-
+acc_path = "C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt"
 class Account():
     def __init__(self, name, nim, password, degree, age, loc, ipk, fav, skill, career, company, exp, mbti):
         self.name = name
@@ -65,8 +59,17 @@ class Account():
     def get_mbti(self):
         return self.mbti
 
-acc = openAccount()
+def openAccount(acc_path):
+    with open(acc_path, "r") as file:
+        lines = file.readlines()
+    for line in lines:
+        acc = line.strip().split("#")
+    file.close()
+    return Account(acc[0], acc[1], acc[2], acc[3], acc[4], acc[5], acc[6], acc[7], acc[8], acc[9], acc[10], acc[11], acc[12])
 
+
+
+acc = openAccount(acc_path)
 
 class Ui_Login(object):
     

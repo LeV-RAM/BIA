@@ -10,7 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 
-
+acc_path = "C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt"
 class Ui_QuestWindow(object):
     def showProfile(self):
         from profile import Ui_ProfileWindow
@@ -62,26 +62,20 @@ class Ui_QuestWindow(object):
              company = acc.get_company()
         if not exp:
              exp = acc.get_exp()
-        with open("C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt", "r") as file:
-                content = file.read()
-        new_content = content.replace(acc.get_mbti(), mbti)
-        new_content2 = new_content.replace(acc.get_loc(), loc)
-        new_content3 = new_content2.replace(acc.get_ipk(), ipk)
-        new_content4 = new_content3.replace(acc.get_fav(), fav)
-        new_content5 = new_content4.replace(acc.get_skill(), skill)
-        new_content6 = new_content5.replace(acc.get_career(), career)
-        new_content7 = new_content6.replace(acc.get_company(), company)
-        new_content8 = new_content7.replace(acc.get_exp(), exp)
 
-        with open("C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt", "w") as file:
-                file.write(new_content8)
+        with open(acc_path, "w") as file:
+            file.write(acc.get_name()+"#"+acc.get_nim()+"#"+acc.get_password()+"#"+acc.get_degree()+"#"+acc.get_age()+"#"+loc+"#"+ipk+"#"+fav+"#"+skill+"#"+career+"#"+company+"#"+exp+"#"+mbti)
         
+        file.close()
+        
+
+    def goToMain(self):
         from mainpage import Ui_MainWindow
         self.window = QtWidgets.QMainWindow()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self.window)
         self.window.showMaximized()
-        
+    
     def setupUi(self, QuestWindow):
         QuestWindow.setObjectName("QuestWindow")
         QuestWindow.resize(1123, 918)
@@ -1044,6 +1038,7 @@ class Ui_QuestWindow(object):
 "color: white")
         self.pushButton.setObjectName("pushButton")
         self.pushButton.clicked.connect(self.setNewData)
+        self.pushButton.clicked.connect(self.goToMain)
         self.pushButton.clicked.connect(QuestWindow.close)
         self.horizontalLayout_25.addWidget(self.pushButton)
         self.verticalLayout_2.addWidget(self.groupBox_20)
