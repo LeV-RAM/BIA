@@ -16,6 +16,7 @@ from PyQt5.QtWidgets import *
 from mainpage import Ui_MainWindow
 
 acc_path = "C:/Users/Asus/OneDrive/Desktop/BIA/data/account.txt"
+
 class Account():
     def __init__(self, name, nim, password, degree, age, loc, ipk, fav, skill, career, company, exp, mbti):
         self.name = name

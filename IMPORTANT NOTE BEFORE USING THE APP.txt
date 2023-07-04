@@ -1,0 +1,23 @@
+Account NIM: 2540000016
+Account Pass: 12345
+
+A. Path variable location:
+- acc_path: login.py, profile.py, questionnaire.py, searchpagefinal.py, searchinternshipfinal.py
+- intern_path: searchpagefinal.py, searchinternshipfinal.py
+- view_path: searchinternshipfinal.py, viewinternshipdetailsfinal.py
+
+B. HOW TO CREATE AN .EXE FILE (https://datatofish.com/executable-pyinstaller/)
+- open CMD
+- if you have not done it => pip install pyinstaller 
+- on the project file location, open CMD => pyinstaller --onefile login.py
+
+THINGS TO DO BEFORE USING THE APPLICATION:
+- Find the variable of acc_path, intern_path, and view_path on each python file (note that not all .py file has all the paths)
+- Set the directory of acc_path to the path where data/account.txt file is located in your local device
+- Set the directory of intern_path to the path where data/account.txt file is located in your local device
+- Set the directory of view_path to the path where data/account.txt file is located in your local device
+(SEE ON NOTE A. for variable locations, you can use Ctrl+F button to find the variable)
+- After all paths are set, create an .exe file (SEE on NOTE B.)
+
+
+
